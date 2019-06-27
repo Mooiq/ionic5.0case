@@ -22,6 +22,6 @@
   - OS                : Windows 10
 
 - screenshots：
-![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/11.png)
-![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/22.png)
-![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/33.png)
+  - ![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/11.png)
+  - ![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/22.png)
+  - ![Image text](https://github.com/Mooiq/ionic5.0case/blob/master/src/assets/img/33.png)
