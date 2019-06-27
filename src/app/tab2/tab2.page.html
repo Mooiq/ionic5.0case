@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      关爱
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<NoticeBar [option]="{'content': 'balabala........', 'font': '14px'}"></NoticeBar>
+
+<ion-content>
+    
+  <ion-card >
+    <ion-card-header>
+      <ion-card-title>
+        <svg class="icon" aria-hidden="true" style="font-size: 1.5rem;">
+            <use xlink:href="#iconshouye-"></use>
+        </svg>
+        08:00-10:00
+      </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col style="text-align: center" size="3" (click)="goDetail('data')">
+            <!-- 自定义图标 -->
+            <ion-badge color="danger" style="position: absolute;right: 0;top: -6px;">2</ion-badge> 
+            <span style="display:inline-block;width: 100%;height: 60px;border-radius: 5px;line-height: 60px;font-size: 3.6em;text-align: center;" [ngStyle]="{'background': 'skyblue'}">
+              <span style="font-weight: bold;" [ngStyle]="{'color': '#ffffff'}">C</span>
+            </span>
+            
+            <div style="font-size: 15px;color: #22bed1">go detail</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

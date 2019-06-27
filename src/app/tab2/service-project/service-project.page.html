@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;padding-right:60px;">服务项目</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- 下拉刷新 -->
+  <ion-refresher slot="fixed">
+    <ion-refresher-content></ion-refresher-content>    
+  </ion-refresher>
+  <!-- Segment with default selection -->
+  <ion-segment #segment (ionChange)="segmentChanged(segment,slider)" value="1">
+    <ion-segment-button value="0">
+      <ion-label>slide1</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      <ion-label>slide2</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>slide3</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+    
+  <!-- slides -->
+  <ion-slides #slider pager="false" [options]="slideOpts" style="width: 100%;font-size: 15px;" (ionSlideTransitionEnd)="slideChange(slider,segment)">
+    <!-- 工作标准 -->
+    <ion-slide>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+      <br>
+      slide1
+    </ion-slide>
+
+    <!-- 登记内容 -->
+    <ion-slide>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+      <br>
+      slide2
+
+    </ion-slide>
+
+    <!-- 服务对象 -->
+    <ion-slide>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+      <br>
+      slide3
+
+    </ion-slide>
+  </ion-slides>
+</ion-content>
